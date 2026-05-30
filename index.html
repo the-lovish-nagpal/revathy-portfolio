@@ -854,6 +854,25 @@
     .cursor, .cursor-ring { display: none; }
     body { cursor: auto; }
   }
+
+/* Added universal responsive fixes */
+@media (max-width: 1200px){
+  .work-grid{grid-template-columns:1fr 1fr !important;}
+}
+@media (max-width: 768px){
+  .nav-links{display:none !important;}
+  .work-grid{grid-template-columns:1fr !important;}
+  .work-item.large{grid-column:span 1 !important;}
+  img{max-width:100% !important;height:auto !important;}
+  .hero-sculpture{width:100% !important;max-width:280px;}
+  .sculpture-letter{font-size:5rem !important;}
+}
+@media (max-width: 480px){
+  *{word-wrap:break-word;}
+  .hero-year{right:1rem !important;}
+  .about-stats{grid-template-columns:1fr !important;}
+}
+
 </style>
 </head>
 <body>
